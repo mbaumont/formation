@@ -1,0 +1,70 @@
+div{
+    border:1px solid blue;
+}
+
+span{
+    border:red solid 1px ;
+}
+
+.ib{
+    border:orange 3px solid;
+    width:200px;
+    height:150px;
+    display:inline-block;
+    vertical-align: top;
+    
+/*    visibility:hidden;*/
+}
+
+.relatif{
+    border:3px solid purple;
+    position:relative;
+    top:1px;
+    left:1px;
+}
+.absolu{
+    border:3px solid cyan;
+    background:rgba(0,255,255,0.5);
+    position:absolute;
+    width:100px;
+    height:100px;
+    top:0px;
+    left:0px;
+}
+
+.fixe{
+    border:3px solid cyan;
+    background:rgba(255,0,255,0.5);
+    position:fixed;
+    width:100px;
+    height:100px;
+    top:0px;
+    right:0px;
+}
+
+.flottant{
+    border:3px solid lime;
+    width: 200px;
+    float=left;
+}
+
+.clearer{
+    clear:both;
+}
+
+.flexbox{
+
+    background: lightgrey;
+    margin: 50px;
+    height: 200px;
+    display:flex;
+    flex-direction:row; /*axe principal*/
+    justify-content: space-around; /*contrôle sur axe principal*/
+    align-items:center;   
+}
+.flexbox>div:nth-child(1){
+    flex:1;
+}
+.flexbox>div:nth-child(2){
+    flex:2;
+}

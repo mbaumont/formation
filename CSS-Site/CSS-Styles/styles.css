@@ -1,0 +1,101 @@
+#global{
+
+   width:80%;
+   margin:auto;
+   padding:0;
+    
+}
+
+div,section,nav,aside,header,footer,article{
+    border: 1px solid;
+    box-sizing: border-box;
+    padding:10px;
+}
+
+#haut{
+    background: blue;
+    height: 200px;  
+    width:100%;
+}
+
+#gauche{
+    float:left;
+    width: 25%;
+    min-height: 500px;
+    background: yellow;  
+}
+#gauche ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#gauche a{
+
+    display:inline-block;
+    width:100%;
+    margin-bottom:10px;
+    padding:10px;
+    box-sizing: border-box;
+    text-align:center;
+    text-decoration:none;
+    background-color:cadetblue;
+    text-transform: uppercase;
+    color:white;
+}
+
+#gauche a:hover,#gauche a.active{
+    background:orange;
+    color:black;
+}
+
+#gauche li ul a{
+    background:blue;
+    margin-left:10%;
+    width:90%;
+    display:none;   
+}
+#gauche li:hover ul a{
+    display:block;   
+}
+
+#droite{
+    float:left;
+    width:75%;
+    min-height:500px;
+    background:aqua;
+    
+
+}
+#bas{
+    clear:both;
+    background: lightgrey;
+    height:40px;
+    width:100%;
+}
+
+/* tablette */
+@media only screen and (min-width:501px) and (max-width:990px){
+    
+    body{
+        margin:0;
+    }
+    #global{
+        width:100%;
+    }
+}
+
+/* media query qui s'applique aux mobile les détecte. Screen/print*/
+@media only screen and (max-width:500px){
+    
+    body{
+        background: cyan;
+        margin:0;
+    }
+    #global{
+        width:100%;
+    }
+    #gauche,#droite{
+        width:100%;
+        min-height: 0;
+    }
+}

@@ -1,0 +1,71 @@
+/* <h1> */
+h1{
+    color:cadetblue;
+    
+}
+
+/* <h2> */
+h2{
+    color:darkslateblue;
+}
+
+
+/*Selecteur par inclusions avec les espaces <h2> dans <div>*/
+
+div h2{
+    font-size:1.2em;
+}
+strong{
+    color:green;
+}
+/* > directement inclu (fils)*/
+div>p>strong{
+    color:purple;
+}
+
+/* id = cookies*/
+#cookies{
+    background-color: lightgrey
+}
+
+/*class = "italique"*/
+.italique{
+    font-style:italic;
+}
+
+/*class = "italique"*/
+.gras{
+    font-weight:bold;
+}
+/*class= "gras italique"*/
+.gras.italique{    
+}
+
+/*classe="italique" dans class="gras"*/
+.gras .italique{  
+}
+a[href]{
+    text-decoration: None;
+}
+a[href]:hover{
+    background-color:chartreuse;
+    border:1px solid black;
+}
+a[href="#"]{
+    background-color: darkgrey;
+}
+
+a[href^="http"]{
+    background-color: cyan;
+}
+
+a[href$='.pdf']{
+    background-color: azure;
+}
+
+ul>li:nth-child(even){
+    color:darkslategrey;
+}
+h2:not(.italique){
+    text-decoration: underline;
+}

@@ -1,0 +1,14 @@
+#bandeau{
+    height:200px;
+    background:gold;
+}
+
+.h-500{
+    min-height:500px;
+    background:lightgrey;
+}
+
+
+#categories{
+    min-height:150px;
+}
